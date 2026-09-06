@@ -1,4 +1,6 @@
-# 预制舱钢结构力学分析
+# PrefabStructBench
+
+**预制舱钢结构力学验算台** · Prefabricated-steel substation structural checkbench
 
 基于 **GB 50017-2017** 的预制舱式变电站三大构件（底座底框横梁 / 墙体立柱 /
 屋顶三角桁架杆件）强度验算、稳定验算与截面优化的**桌面应用**。
