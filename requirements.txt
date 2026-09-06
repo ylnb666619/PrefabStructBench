@@ -1,0 +1,7 @@
+# 预制舱钢结构力学分析 依赖
+PyQt6
+PyQt6-Fluent-Widgets[full]
+fastapi
+uvicorn[standard]
+numpy
+pydantic
