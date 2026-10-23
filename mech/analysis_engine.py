@@ -28,6 +28,7 @@ from steel_sections import (
     square_by_size, rectangle_properties, circular_hollow_properties,
 )
 import section_optimizer as so
+from calcbook_engine import coldc_sec
 
 # ============================================================================
 # 构件枚举与默认参数
@@ -36,7 +37,9 @@ import section_optimizer as so
 COMPONENTS = {
     "beam":   "底座底框横梁",
     "column": "墙体立柱",
-    "truss":  "屋顶桁架杆件",
+    "truss":  "屋顶三角桁架杆件",
+    "purlin": "三层墙体次龙骨",
+    "roof":   "屋顶龙骨",
 }
 STEEL_OPTIONS = ["Q355B", "Q235B"]
 
@@ -46,6 +49,8 @@ DEFAULTS = {
     "column": {"N": 60.0, "Mx": 8.0, "My": 3.0, "width": 100.0,
                "thick": 4.0, "height": 2850.0},
     "truss":  {"N": 1000.0, "l0": 1820.0, "sec": "rect", "dia": 89.0},
+    "purlin": {"w": 1.0, "span": 1000.0},   # 檩条: 风压 kPa, 跨度 mm
+    "roof":   {"N": 88.0, "l0": 1346.0},    # 屋顶龙骨: 轴力 kN, 斜杆长 mm
 }
 
 
